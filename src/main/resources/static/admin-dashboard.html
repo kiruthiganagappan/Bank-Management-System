@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <h2>
+            <i class="fa-solid fa-building-columns"></i>
+            Bank Admin
+        </h2>
+
+        <!-- <button class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button> -->
+        <button class="logout-btn" onclick="logout()">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+        </button>
+
+    </nav>
+
+    <!-- Main -->
+
+    <div class="dashboard-container">
+
+        <!-- Create Account -->
+
+        <div class="card">
+
+            <h2>Create Account</h2>
+
+            <input type="text" id="name" placeholder="Customer Name">
+
+            <input type="text" id="number" placeholder="Account Number">
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <input type="text" id="aadhar" placeholder="Aadhaar Number">
+
+            <input type="email" id="email" placeholder="Email Address">
+
+            <input type="number" id="balance" placeholder="Opening Balance">
+
+            <button onclick="createAccount()">
+                Create Account
+            </button>
+
+        </div>
+
+        <!-- Deposit -->
+
+        <div class="card">
+
+            <h2>Deposit</h2>
+
+            <input type="number" id="depositId" placeholder="Customer ID">
+
+            <input type="number" id="depositAmount" placeholder="Deposit Amount">
+
+            <button onclick="deposit()">
+                Deposit
+            </button>
+
+        </div>
+
+        <!-- Withdraw -->
+
+        <div class="card">
+
+            <h2>Withdraw</h2>
+
+            <input type="number" id="withdrawId" placeholder="Customer ID">
+
+            <input type="number" id="withdrawAmount" placeholder="Withdraw Amount">
+
+            <button onclick="withdraw()">
+                Withdraw
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Customer Table -->
+
+    <div class="table-card">
+
+        <h2>Customer Accounts</h2>
+
+        <button onclick="getAccounts()">
+            Refresh Accounts
+        </button>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Account No</th>
+                    <th>Phone</th>
+                    <th>Aadhaar</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

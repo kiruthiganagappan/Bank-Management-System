@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <h2>
+            <i class="fa-solid fa-building-columns"></i>
+            Customer Dashboard
+        </h2>
+
+        <button class="logout-btn" onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </nav>
+
+    <!-- Welcome Card -->
+
+    <div class="balance-container">
+
+        <div class="balance-card">
+
+            <i class="fa-solid fa-wallet balance-icon"></i>
+
+            <h2>Available Balance</h2>
+
+            <h1 id="customerBalance">₹0.00</h1>
+
+            <p id="customerName">Welcome Customer</p>
+
+        </div>
+
+    </div>
+
+    <!-- Deposit & Withdraw -->
+
+    <div class="dashboard-container">
+
+        <div class="card">
+
+            <h2>Deposit Amount</h2>
+
+            <input type="number"
+                   id="depositAmount"
+                   placeholder="Enter Amount">
+
+            <button onclick="deposit()">
+                Deposit
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Withdraw Amount</h2>
+
+            <input type="number"
+                   id="withdrawAmount"
+                   placeholder="Enter Amount">
+
+            <button onclick="withdraw()">
+                Withdraw
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/customer.js"></script>
+
+</body>
+
+</html>
