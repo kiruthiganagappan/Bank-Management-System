@@ -1,62 +1,51 @@
-
 # Bank Management System
 
-## About the Project
-The Bank Management System is a web-based application developed using Java Spring Boot and MySQL. It provides a simple interface for administrators and customers to access banking features.
+A web-based Bank Management System developed using Java Spring Boot, MySQL, HTML, CSS, and JavaScript.
 
 ## Features
-- Admin Login
+
 - Customer Login
+- Admin Login
 - Customer Dashboard
-- Account Information Management
-- Backend integration with MySQL
-- User-friendly web interface
+- Bank Account Management
+- Deposit and Withdrawal
+- MySQL Database Integration
 
 ## Technologies Used
-- Java
+
+- Java JDK 21
 - Spring Boot
 - MySQL
 - HTML
 - CSS
 - JavaScript
 - Maven
-- Git and GitHub
 
 ## Project Structure
+
 ```text
-demo/
+Bank-Mgmt/
 ├── src/
 │   ├── main/
-│   │   ├── java/com/example/bankmgmt/
-│   │   │   ├── controller/
-│   │   │   ├── model/
-│   │   │   ├── repository/
-│   │   │   └── service/
+│   │   ├── java/
 │   │   └── resources/
-│   │       ├── static/
-│   │       └── application.properties
 │   └── test/
+├── .mvn/
 ├── pom.xml
 ├── mvnw
 ├── mvnw.cmd
+├── .gitignore
 └── README.md
 ```
 
-## Prerequisites
-Install the following before running the project:
-- Java JDK 21
-- MySQL Server
-- Visual Studio Code (or another Java IDE)
+## How to Run
 
-## How to Run the Project
+1. Install Java JDK 21 and MySQL.
+2. Configure the database connection in `src/main/resources/application.properties`.
+3. Open the project folder in VS Code.
+4. Open the terminal in the project directory.
+5. Run the application using:
 
-1. Clone or download this repository.
-2. Create a MySQL database named `bankdb` (or use the database name configured in your application).
-3. Configure the database URL, username, and password in `src/main/resources/application.properties`.
-4. Open the project folder in a terminal.
-5. Run the application:
-
-   Windows:
    ```powershell
    .\mvnw.cmd spring-boot:run
    ```
@@ -65,17 +54,10 @@ Install the following before running the project:
 
    http://localhost:8080
 
-## Database Configuration
-Configure your MySQL connection details in `application.properties`. Never publish database passwords or other secrets in a public repository.
-
-## Future Enhancements
-- Secure authentication and password handling
-- Transaction history
-- Deposit and withdrawal features
-- Improved validation and error handling
-
 ## Author
+
 GitHub: https://github.com/kiruthiganagappan
 
-## License
-This project is intended for educational purposes.
+## Purpose
+
+This project was developed for educational purposes to learn Java, Spring Boot, database integration, and web application development.
